@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как создать сайт с пoмощью кода ?</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <h1><a href="/">БМТ</a></h1>
+            <div class="nav-links">
+                <a href="/steps.html">Шаги</a>
+                <a href="/resources.html">Ресурсы</a>
+                <a href="/contact.html">Контакты</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Научись создавать сайты с нуля</h2>
+            <p>Полное руководство по веб-разработке для начинающих</p>
+            <a href="#steps" class="cta-button">Начать</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="basics" class="section">
+            <h2><i class="fas fa-laptop-code"></i> Основы веб-разработки</h2>
+            <div class="step-card">
+                <div class="card">
+                    <h3>HTML</h3>
+                    <p>Структура и содержание веб-страницы</p>
+                    <div class="code-example">
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Мой сайт&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Привет, мир!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>CSS</h3>
+                    <p>Стилизация и оформление</p>
+                    <div class="code-example">
+                        <pre><code>body {
+    font-family: Arial;
+    background: #f0f0f0;
+}
+h1 {
+    color: blue;
+}</code></pre>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>Интерактивность и логика</p>
+                    <div class="code-example">
+                        <pre><code>document.querySelector('button')
+.addEventListener('click', () => {
+    alert('Привет!');
+});</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="steps" class="section">
+            <h2><i class="fas fa-road"></i> Шаги создания сайта</h2>
+            <div class="step-card">
+                <div class="card">
+                    <h3>1. Планирование</h3>
+                    <p>Определите цель сайта и целевую аудиторию</p>
+                </div>
+                <div class="card">
+                    <h3>2. Дизайн</h3>
+                    <p>Создайте макет и продумайте пользовательский опыт</p>
+                </div>
+                <div class="card">
+                    <h3>3. Разработка</h3>
+                    <p>Напишите код используя HTML, CSS и JavaScript</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2025 г.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
