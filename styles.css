@@ -157,3 +157,32 @@ footer {
         font-size: 1rem;
     }
 }
+/* Стили для бургер-меню */
+.burger-menu {
+    display: none; /* По умолчанию скрыто */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Скрываем кнопки навигации */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Высота хедера */
+        right: 0;
+        background: var(--primary);
+        width: 100%;
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex; /* Показываем кнопки при активации */
+    }
+
+    .burger-menu {
+        display: block; /* Показываем бургер-меню */
+    }
+}
